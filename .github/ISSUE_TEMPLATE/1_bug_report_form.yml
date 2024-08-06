@@ -6,11 +6,11 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to report a bug in the Oppia Android project.
+        Thanks for taking the time to report a bug in the KlinicCon-Frontend project.
   - type: markdown
     attributes:
       value: |
-        Before filing a new issue, **please do a quick search** to check that it hasn't already been filed on the issue tracker. You can do this by going to [this link](https://github.com/oppia/oppia-android/issues) and typing some words related to the issue in the search box next to the "New issue" button.
+        Before filing a new issue, **please do a quick search** to check that it hasn't already been filed on the issue tracker. You can do this by going to [this link](https://github.com/rt4914/KlinicCon-Frontend/issues) and typing some words related to the issue in the search box next to the "New issue" button.
   - type: textarea
     id: issue-description
     attributes:

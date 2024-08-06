@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: First-time contributor?
-    url: https://github.com/oppia/oppia-android/wiki/Contributing-to-Oppia-android
+    url: https://github.com/rt4914/KlinicCon-Frontend/wiki
     about: Follow these instructions to get started.
-  - name: Oppia Community Support
-    url: https://github.com/oppia/oppia-android/discussions
+  - name: KlinicCon Community Support
+    url: https://github.com/rt4914/KlinicCon-Frontend
     about: Please ask and answer questions here.
