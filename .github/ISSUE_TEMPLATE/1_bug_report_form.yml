@@ -1,5 +1,5 @@
-name: Issue Template
-description: Create an issue to improve
+name: Fix #4: Adds Issue Template
+description: Fix #4: Adds Issue Template
 title: "[BUG]: "
 body:
   - type: markdown
