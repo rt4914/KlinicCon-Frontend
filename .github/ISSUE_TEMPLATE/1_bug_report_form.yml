@@ -1,7 +1,6 @@
-name: Bug report
-description: Create a report to help us improve
+name: Issue Template
+description: Create an issue to improve
 title: "[BUG]: "
-labels: [triage needed, bug]
 body:
   - type: markdown
     attributes:
@@ -45,25 +44,41 @@ body:
   - type: input
     id: device
     attributes:
-      label: What device/emulator are you using?
-      description: Please specify the device/emulator you're using.
-      placeholder: OnePlus Nord2 5G
+      label: What device are you using?
+      description: Please specify the device you're using.
+    placeholder: Macbook Pro M1
     validations:
       required: false
   - type: input
-    id: android-version
+    id: os-version
     attributes:
-      label: Which Android version is your device/emulator running?
-      description: Please specify the Android version that is running on your device/emulator.
-      placeholder: Android 11
+      label: What is your operating system version?
+      description: Please specify the version of your operating system.
+    placeholder: macOS 12.3.1
     validations:
       required: false
   - type: input
-    id: oppia-app-version
+    id: browser
     attributes:
-      label: Which version of the Oppia Android app are you using?
-      description: You can get this through system app settings or via the in-app Admin Controls menu. It will look like [number].[number]-[alpha|beta]-[random_string].
-      placeholder: 0.11-beta-8c81c98d8b
+      label: What browser are you using?
+      description: Please specify the browser you're using.
+    placeholder: Chrome
+    validations:
+      required: false
+  - type: input
+    id: browser-version
+    attributes:
+      label: What is your browser version?
+      description: Please specify the version of your browser.
+    placeholder: Chrome xx.yy.zz version
+    validations:
+      required: false
+  - type: input
+    id: screen-resolution
+    attributes:
+      label: What is your screen resolution?
+      description: Please specify your screen resolution.
+    placeholder: 2560x1600
     validations:
       required: false
   - type: textarea
