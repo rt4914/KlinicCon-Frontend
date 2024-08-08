@@ -46,7 +46,7 @@ body:
     attributes:
       label: What device are you using?
       description: Please specify the device you're using.
-    placeholder: Macbook Pro M1
+      placeholder: Macbook Pro M1
     validations:
       required: false
   - type: input
@@ -54,7 +54,7 @@ body:
     attributes:
       label: What is your operating system version?
       description: Please specify the version of your operating system.
-    placeholder: macOS 12.3.1
+      placeholder: macOS 12.3.1
     validations:
       required: false
   - type: input
@@ -62,7 +62,7 @@ body:
     attributes:
       label: What browser are you using?
       description: Please specify the browser you're using.
-    placeholder: Chrome
+      placeholder: Chrome
     validations:
       required: false
   - type: input
@@ -70,7 +70,7 @@ body:
     attributes:
       label: What is your browser version?
       description: Please specify the version of your browser.
-    placeholder: Chrome xx.yy.zz version
+      placeholder: Chrome xx.yy.zz version
     validations:
       required: false
   - type: input
@@ -78,7 +78,7 @@ body:
     attributes:
       label: What is your screen resolution?
       description: Please specify your screen resolution.
-    placeholder: 2560x1600
+      placeholder: 2560x1600
     validations:
       required: false
   - type: textarea
