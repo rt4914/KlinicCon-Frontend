@@ -1,5 +1,5 @@
-name: Fix #4: Adds Issue Template
-description: Fix #4: Adds Issue Template
+name: Bug Report
+description: Mention details of what this bug is
 title: "[BUG]: "
 body:
   - type: markdown
