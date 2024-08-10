@@ -1,4 +1,4 @@
-# Environment Requirements #6
+ Environment Requirements #6
 
 To run the KlinicCon project locally, ensure that the following software and dependencies are installed on your development machine.
 
@@ -24,7 +24,7 @@ To run the KlinicCon project locally, ensure that the following software and dep
 
  5. Ruby on Rails
 - Version: 7.x or higher
-- Installation Guide: [Rails Official Guide](https://guides.rubyonrails.org/getting_started.html#installing-rails)
+- Installation Guide: [Rails Official Guide](https://guides.rubyonrails.org/getting_started.htmlinstalling-rails)
 - Description: Rails is a web application framework that runs on Ruby, used to develop and manage the server-side functionalities of KlinicCon.
 
  6. PostgreSQL
@@ -43,12 +43,82 @@ To run the KlinicCon project locally, ensure that the following software and dep
 - Description: Git is a version control system used for tracking changes in the source code and facilitating collaboration with other developers.
 
  Additional Tools
-- Editor: [Visual Studio Code](https://code.visualstudio.com/) or any preferred code editor.
+- Editor: [Visual Studio Code aka VSCode](https://code.visualstudio.com/) or any preferred code editor.
 - Browser: Latest version of Chrome, Firefox, or Edge for testing and development.
 
-  Notes:
+---
+
+ Backend Setup
+
+This section describes the what is required for the backend of the KlinicCon project, which is built using Ruby on Rails.
+
+1. Clone the Backend Repository:
+   - Repository Link: [KlinicCon Backend Repository](https://github.com/YOUR_USERNAME/kliniccon-backend)
+   - Use the following command to clone the backend repository:
+     <<bash>>
+    git clone https://github.com/rt4914/KlinicCon-Frontend.git
+     
+
+2. Install Ruby on Rails:
+   - Ensure Ruby and Rails are installed as specified in the environment requirements above.
+   - Install the required gems using Bundler:
+     <<bash>>
+     bundle install
+     
+
+3. Set Up the Database:
+   - Make sure PostgreSQL is installed and running.
+   - Create and migrate the database:
+     <<bash>>
+     rails db:create
+     rails db:migrate
+     
+
+4. Run the Backend Server:
+   - Start the Rails server using the command:
+     <<bash>>
+     rails server
+     
+   - The server will run at `http://localhost:3000` or `http://127.0.0.1:3000` by default.
+
+---
+
+ Frontend Setup
+
+This section describes the what is required for the frontend of the KlinicCon project, which is built using React and Vite.
+
+1. Clone the Frontend Repository:
+   - Repository Link: [KlinicCon Frontend Repository](https://github.com/YOUR_USERNAME/kliniccon-frontend)
+   - Use the following command to clone the frontend repository:
+     <bash>
+     git clone https://github.com/YOUR_USERNAME/kliniccon-frontend.git
+     
+
+2. Install Node.js and Yarn:
+   - Ensure Node.js and Yarn are installed as specified in the environment requirements above.
+
+3. Install JavaScript Dependencies:
+   - Navigate to the frontend project directory:
+     <bash>
+     cd kliniccon-frontend
+     
+   - Install the dependencies using Yarn:
+     <bash>
+     yarn install
+     
+
+4. Run the Frontend Development Server:
+   - Start the Vite development server using the command:
+     <bash>
+     yarn dev
+     
+   - The development server will run at `http://localhost:5173` by default.
+
+---
+
+ Notes
 - Ensure all installations match or exceed the specified versions to avoid compatibility issues.
 - Follow the linked installation guides to set up each tool correctly.
 - After setting up the environment, refer to the project’s `README.md` for detailed instructions on running the project.
 
-By following the above requirements, you will have all the necessary tools and dependencies to develop and run the KlinicCon project on your local machine.
+By following the above requirements and setup instructions, you will have all the necessary tools and configurations to develop and run the KlinicCon project on your local machine.
