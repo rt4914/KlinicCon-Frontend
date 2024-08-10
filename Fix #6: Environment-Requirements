@@ -1,0 +1,54 @@
+# Environment Requirements #6
+
+To run the KlinicCon project locally, ensure that the following software and dependencies are installed on your development machine.
+
+ 1. Node.js
+- Version: 14.x or higher
+- Installation Guide: [Node.js Official Website](https://nodejs.org/)
+- Description: Node.js is required to run the JavaScript environment, particularly for managing the frontend with React.
+
+ 2. React
+- Version: 17.x or higher
+- Documentation: [React Official Documentation](https://reactjs.org/docs/getting-started.html)
+- Description: React is used to build the user interface of the application. It is essential for developing and running the frontend components.
+
+ 3. Vite
+- Version: Latest
+- Installation Guide: [Vite Official Documentation](https://vitejs.dev/guide/)
+- Description: Vite is a build tool that significantly improves development speed with React. It is required for compiling and bundling the frontend code.
+
+ 4. Ruby
+- Version: 3.x or higher
+- Installation Guide: [Ruby Official Website](https://www.ruby-lang.org/en/documentation/installation/)
+- Description: Ruby is necessary for running the backend server using Ruby on Rails. It powers the server-side logic and API.
+
+ 5. Ruby on Rails
+- Version: 7.x or higher
+- Installation Guide: [Rails Official Guide](https://guides.rubyonrails.org/getting_started.html#installing-rails)
+- Description: Rails is a web application framework that runs on Ruby, used to develop and manage the server-side functionalities of KlinicCon.
+
+ 6. PostgreSQL
+- Version: 12.x or higher
+- Installation Guide: [PostgreSQL Official Website](https://www.postgresql.org/download/)
+- Description: PostgreSQL is a relational database management system. It is required for storing and managing the application's data.
+
+ 7. Yarn
+- Version: 1.x or higher
+- Installation Guide: [Yarn Official Website](https://yarnpkg.com/getting-started/install)
+- Description: Yarn is a package manager for JavaScript. It is used to install and manage the JavaScript dependencies required for the frontend.
+
+ 8. Git
+- Version: Latest
+- Installation Guide: [Git Official Documentation](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- Description: Git is a version control system used for tracking changes in the source code and facilitating collaboration with other developers.
+
+ Additional Tools
+- Editor: [Visual Studio Code](https://code.visualstudio.com/) or any preferred code editor.
+- Browser: Latest version of Chrome, Firefox, or Edge for testing and development.
+
+  Notes:
+- Ensure all installations match or exceed the specified versions to avoid compatibility issues.
+- Follow the linked installation guides to set up each tool correctly.
+- After setting up the environment, refer to the project’s `README.md` for detailed instructions on running the project.
+
+By following the above requirements, you will have all the necessary tools and dependencies to develop and run the KlinicCon project on your local machine.
