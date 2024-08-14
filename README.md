@@ -178,16 +178,64 @@ Thanks goes to these wonderful people:
 <table>
   <tbody>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/rt4914"><img src="https://avatars.githubusercontent.com/u/9396084?v=4" width="100px;" alt="Rajat Talesra"/><br /><sub><b>Rajat Talesra</b></sub></a><br /><a href="https://github.com//rt4914/KlinicCon-Frontend/commits?author=rt4914" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/KvngJamesNG"><img src="https://avatars.githubusercontent.com/u/4989778?v=4" width="100px;" alt="Adewale James Adesina"/><br /><sub><b>Adewale James Adesina</b></sub></a><br /><a href="https://github.com//rt4914/KlinicCon-Frontend/commits?author=KvngJamesNG" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/musangamfure"><img src="https://avatars.githubusercontent.com/u/123179856?v=4" width="100px;" alt="Musangamfura Emmanuel"/><br /><sub><b>Musangamfura Emmanuel</b></sub></a><br /><a href="https://github.com//rt4914/KlinicCon-Frontend/commits?author=musangamfure" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/rray524"><img src="https://avatars.githubusercontent.com/u/11070875?v=4" width="100px;" alt="Rohit Mondal"/><br /><sub><b>Rohit Mondal</b></sub></a><br /><a href="https://github.com//rt4914/KlinicCon-Frontend/commits?author=rray524" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/KvngJamesNG">
+          <img src="https://avatars.githubusercontent.com/u/4989778?v=4" width="100px;" alt="Adewale James Adesina"/><br />
+          <sub><b>Adewale James Adesina</b></sub>
+        </a><br />
+        <a href="https://github.com//rt4914/KlinicCon-Frontend/commits?author=KvngJamesNG" title="Code">💻</a>
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/aniketpatidar">
+          <img src="https://avatars.githubusercontent.com/u/67000557?s=96&v=4" width="100px;" alt="Aniket Patidar"/><br />
+          <sub><b>Aniket Patidar</b></sub>
+        </a><br />
+        <a href="https://github.com//rt4914/KlinicCon-Frontend/commits?author=aniketpatidar" title="Code">💻</a>
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/ankithacherian">
+          <img src="https://avatars.githubusercontent.com/u/98149187?v=4" width="100px;" alt="Ankitha Cherian"/><br />
+          <sub><b>Ankitha Cherian</b></sub>
+        </a><br />
+        <a href="https://github.com//rt4914/KlinicCon-Frontend/commits?author=ankithacherian" title="Code">💻</a>
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/MohitGupta121">
+          <img src="https://avatars.githubusercontent.com/u/76530270?v=4" width="100px;" alt="Mohit Gupta"/><br />
+          <sub><b>Mohit Gupta</b></sub>
+        </a><br />
+        <a href="https://github.com//rt4914/KlinicCon-Frontend/commits?author=MohitGupta121" title="Code">💻</a>
+      </td>
     </tr>
     <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/MohitGupta121"><img src="https://avatars.githubusercontent.com/u/76530270?v=4" width="100px;" alt="Mohit Gupta"/><br /><sub><b>Mohit Gupta</b></sub></a><br /><a href="https://github.com//rt4914/KlinicCon-Frontend/commits?author=MohitGupta121" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/vanamraghu"><img src="https://avatars.githubusercontent.com/u/22324623?v=4" width="100px;" alt="Vanam"/><br /><sub><b>Vanam</b></sub></a><br /><a href="https://github.com//rt4914/KlinicCon-Frontend/commits?author=vanamraghu" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/aniketpatidar"><img src="https://avatars.githubusercontent.com/u/67000557?s=96&v=4" width="100px;" alt="Aniket Patidar"/><br /><sub><b>Aniket Patidar</b></sub></a><br /><a href="https://github.com//rt4914/KlinicCon-Frontend/commits?author=aniketpatidar" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/ankithacherian"><img src="https://avatars.githubusercontent.com/u/98149187?v=4" width="100px;" alt="Ankitha Cherian"/><br /><sub><b>Ankitha Cherian</b></sub></a><br /><a href="https://github.com//rt4914/KlinicCon-Frontend/commits?author=ankithacherian" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/musangamfure">
+          <img src="https://avatars.githubusercontent.com/u/123179856?v=4" width="100px;" alt="Musangamfura Emmanuel"/><br />
+          <sub><b>Musangamfura Emmanuel</b></sub>
+        </a><br />
+        <a href="https://github.com//rt4914/KlinicCon-Frontend/commits?author=musangamfure" title="Code">💻</a>
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/rt4914">
+          <img src="https://avatars.githubusercontent.com/u/9396084?v=4" width="100px;" alt="Rajat Talesra"/><br />
+          <sub><b>Rajat Talesra</b></sub>
+        </a><br />
+        <a href="https://github.com//rt4914/KlinicCon-Frontend/commits?author=rt4914" title="Code">💻</a>
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/rray524">
+          <img src="https://avatars.githubusercontent.com/u/11070875?v=4" width="100px;" alt="Rohit Mondal"/><br />
+          <sub><b>Rohit Mondal</b></sub>
+        </a><br />
+        <a href="https://github.com//rt4914/KlinicCon-Frontend/commits?author=rray524" title="Code">💻</a>
+      </td>
+      <td align="center" valign="top" width="14.28%">
+        <a href="https://github.com/vanamraghu">
+          <img src="https://avatars.githubusercontent.com/u/22324623?v=4" width="100px;" alt="Vanam"/><br />
+          <sub><b>Vanam</b></sub>
+        </a><br />
+        <a href="https://github.com//rt4914/KlinicCon-Frontend/commits?author=vanamraghu" title="Code">💻</a>
+      </td>
     </tr>
   </tbody>
 </table>
