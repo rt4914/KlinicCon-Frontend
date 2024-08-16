@@ -61,14 +61,19 @@ Before installation, please make sure you have already installed the following t
     ```bash
     npm install
     ```
+4. Optional step to run a storybook
 
-4. Run the server in the project directory:
+    ```bash
+    npm run storybook
+    ```
+
+5. Run the server in the project directory:
 
     ```bash
     npm run dev
     ```
 
-5. Open the URL in your browser: `http://localhost:PORT`
+6. Open the URL in your browser: `http://localhost:PORT`
 
 **KlinicCon-Backend**
 
@@ -105,14 +110,9 @@ Before installation, please make sure you have already installed the following t
 
 6. Open the URL in your browser: `http://localhost:PORT`
 
-## About Storybook
 
-Storybook is a tool for developing UI components in isolation. It makes building and testing components easier by providing a development environment where you can interact with and see the changes in real-time.
 
-**How to use/run Storybook**
 
-```bash
-npm run storybook
 
 **Note**
 - Replace `PORT` with the port number where your application is running. You can typically find this information in your application's startup logs.
