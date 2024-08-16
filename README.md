@@ -73,7 +73,7 @@ Before installation, please make sure you have already installed the following t
 
 5. Open the URL in your browser: `http://localhost:PORT`
 
-6. Install dependencies
+6. Optional step to run a storybook
 
    ```bash
    npm run storybook
