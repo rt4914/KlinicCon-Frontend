@@ -1,31 +1,31 @@
 @font-face {
-    font-family: 'Open Sans';
-    src: url('./src/fonts/static/OpenSans-Regular.ttf') format('ttf'),
-         url('./src/fonts/static/OpenSans-Regular.ttf') format('tff');
+    font-family: "Open Sans";
+    src: url("./src/fonts/static/OpenSans-Regular.ttf") format("ttf"),
+         url("./src/fonts/static/OpenSans-Regular.ttf") format("tff");
     font-weight: 400;
     font-style: normal;
     font-display: swap;
   }
   
   @font-face {
-    font-family: 'Open Sans';
-    src: url('./src/fonts/static/OpenSans-Bold.ttf') format('ttf'),
-         url('./src/fonts/static/OpenSans-Bold.ttf') format('ttf');
+    font-family: "Open Sans";
+    src: url("./src/fonts/static/OpenSans-Bold.ttf") format("ttf"),
+         url("./src/fonts/static/OpenSans-Bold.ttf") format("ttf");
     font-weight: 700;
     font-style: normal;
     font-display: swap;
   }
   
   @font-face {
-    font-family: 'Open Sans';
-    src: url('./src/fonts/static/OpenSans-Italic.ttf') format('ttf'),
-         url('./src/fonts/static/OpenSans-Italic.ttf') format('ttf');
+    font-family: "Open Sans";
+    src: url("./src/fonts/static/OpenSans-Italic.ttf") format("ttf"),
+         url("./src/fonts/static/OpenSans-Italic.ttf") format("ttf");
     font-weight: 400;
     font-style: italic;
     font-display: swap;
   }
   
   body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
   
