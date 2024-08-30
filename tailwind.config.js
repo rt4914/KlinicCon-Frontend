@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 export const content = ["./src/**/*.{js,jsx,ts,tsx}", "./index.html"];
 export const theme = {
-  extend: {},
+  extend: {
+    fontFamily: {
+      sans: ['Open Sans', 'ui-sans-serif', 'system-ui'],
+    },
+  },
 };
 export const plugins = [];
