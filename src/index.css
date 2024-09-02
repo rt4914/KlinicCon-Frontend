@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* src/index.css */
+:root {
+    --color-orange: #ff6725;
+    --color-orange-dark: #ff3f25;
+    --color-orange-light: #fef7f3;
+    --color-brown: #453a34;
+    --color-green: #00b579;
+  }
+  
+  body {
+    background-color: var(--color-orange-light);
+    color: var(--color-brown);
+  }
+  
+  .button {
+    background-color: var(--color-green);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: var(--color-orange-dark);
+  }
