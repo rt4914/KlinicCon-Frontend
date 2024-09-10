@@ -1,30 +1,36 @@
+const Variant = {
+  DEFAULT: 'DEFAULT',
+  SECONDARY: 'SECONDARY',
+  SMALL: 'SMALL',
+};
+
 const Input = ({
   label,
   name,
   type = 'text',
   placeholder,
   required = false,
-  variant = 'DEFAULT'
+  variant = Variant.DEFAULT
 }) => {
   const variants = {
-    DEFAULT: {
+    [Variant.DEFAULT]: {
       input: 'border-gray-500 text-gray-900',
       label: 'text-gray-900 text-sm',
     },
-    SECONDARY: {
+    [Variant.SECONDARY]: {
       input: 'bg-gray-100 border-gray-300 text-gray-700',
       label: 'text-gray-500 text-sm',
     },
-    SMALL: {
+    [Variant.SMALL]: {
       input: 'text-sm border-gray-300 text-gray-700',
       label: 'font-semibold text-xs',
     },
   };
 
-  const { input: inputStyles, label: labelStyles } = variants[variant] || variants.DEFAULT;
+  const { input: inputStyles, label: labelStyles } = variants[variant] || variants[Variant.DEFAULT];
 
   return (
-    <div className="mb-4">
+    <>
       {label && (
         <label htmlFor={name} className={`block mb-2 tracking-tight ${labelStyles}`}>
           {label}
@@ -39,8 +45,8 @@ const Input = ({
         required={required}
         className={`block rounded-md border px-3 py-2 focus:outline-none text-xs w-full ${inputStyles}`}
       />
-    </div>
+    </>
   );
 };
 
-export default Input;
+export { Input, Variant };
