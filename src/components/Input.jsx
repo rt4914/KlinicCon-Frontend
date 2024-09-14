@@ -1,8 +1,4 @@
-const Variant = {
-  DEFAULT: 'DEFAULT',
-  SECONDARY: 'SECONDARY',
-  SMALL: 'SMALL',
-};
+import PropTypes from 'prop-types';
 
 const Input = ({
   label,
@@ -47,6 +43,21 @@ const Input = ({
       />
     </>
   );
+};
+
+const Variant = {
+  DEFAULT: 'DEFAULT',
+  SECONDARY: 'SECONDARY',
+  SMALL: 'SMALL',
+};
+
+Input.propTypes = {
+  label: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  type: PropTypes.string,
+  placeholder: PropTypes.string.isRequired,
+  required: PropTypes.bool,
+  variant: PropTypes.oneOf(Object.values(Variant)),
 };
 
 export { Input, Variant };
