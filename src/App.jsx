@@ -1,8 +1,11 @@
 const App = () => {
   return (
-    <h1 className="underline p-4">
+    <div>
+    <h1 className="text-orange text-4xl font-bold" style={{ color: '#ff6725' }}>
       Hello World!
     </h1>
+      <p className="text-brown text-4xl font-bold" style={{ color: '#00b579' }}> Sign In </p>
+    </div>
   );
 };
 
