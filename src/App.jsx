@@ -1,8 +1,8 @@
 const App = () => {
   return (
-    <h1 className="underline p-4">
-      Hello World!
-    </h1>
+    <>
+      <h1 className="underline p-4">Hello World!</h1>
+    </>
   );
 };
 
