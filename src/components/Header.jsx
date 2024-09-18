@@ -18,7 +18,22 @@ const Header = ({ text, highlightWords, size, textColor, textAlign }) => {
     });
   };
 
-  const headerClass = `${size === "h1" ? "text-6xl" : size === "h2" ? "text-3xl" : "text-2xl"} text-${textColor} ${textAlign} font-bold`;
+  let sizeClass;
+  switch (size) {
+    case "h1":
+      sizeClass = "text-6xl";
+      break;
+    case "h2":
+      sizeClass = "text-3xl";
+      break;
+    case "h3":
+      sizeClass = "text-2xl";
+      break;
+    default:
+      sizeClass = "text-3xl";
+  }
+
+  const headerClass = `${sizeClass} text-${textColor} ${textAlign} font-bold`;
 
   return <div className={headerClass}>{renderText()}</div>;
 };
