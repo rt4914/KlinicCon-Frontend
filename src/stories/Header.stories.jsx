@@ -9,7 +9,6 @@ export default {
 export const DefaultHeader = () => (
   <Header
     text="Unlock Homy's advantages"
-    highlightWords={["Homy's", "advantages"]}
     size="h2"
     textColor="black"
     textAlign="text-center"
@@ -20,9 +19,8 @@ export const DefaultHeader = () => (
 export const H1WhiteLeftAligned = () => (
   <Header
     text="Exclusive Monthly Deal for you."
-    highlightWords={["Monthly", "Deal"]}
     size="h1"
-    textColor="white"
+    textColor="black"
     textAlign="text-left"
   />
 );
@@ -31,7 +29,6 @@ export const H1WhiteLeftAligned = () => (
 export const H3RightAlignedMultipleHighlights = () => (
   <Header
     text="Any Inquiry? Feel free to contact Us."
-    highlightWords={["Inquiry", "contact", "Us"]}
     size="h3"
     textColor="black"
     textAlign="text-right"
@@ -42,9 +39,8 @@ export const H3RightAlignedMultipleHighlights = () => (
 export const CustomHeader = () => (
   <Header
     text="Amazing Deals Await You!"
-    highlightWords={["Amazing", "Deals", "You"]}
     size="h2"
-    textColor="white"
+    textColor="black"
     textAlign="text-center"
   />
 );

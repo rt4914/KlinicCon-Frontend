@@ -1,18 +1,19 @@
 import PropTypes from "prop-types";
+import Wavy from "./Component";
 
-const Header = ({ text, highlightWords, size, textColor, textAlign }) => {
+const Header = ({ text, size, textColor, textAlign }) => {
   const renderText = () => {
     const words = text.split(" ");
     return words.map((word, index) => {
-      const isHighlighted = highlightWords.includes(word);
-
-      const highlightClass = isHighlighted
-        ? "underline decoration-wavy decoration-orange-500 font-bold"
-        : "font-bold";
+      const isLastWord = index === words.length - 1;
+      const wordLengthFactor = word.length * 35;
 
       return (
-        <span key={index} className={highlightClass}>
-          {word}{" "}
+        <span
+          key={index}
+          className={`relative ${isLastWord ? "inline-block" : ""}`}
+        >
+          {word} {isLastWord && <Wavy wordLengthFactor={wordLengthFactor} />}
         </span>
       );
     });
@@ -33,14 +34,13 @@ const Header = ({ text, highlightWords, size, textColor, textAlign }) => {
       sizeClass = "text-3xl";
   }
 
-  const headerClass = `${sizeClass} text-${textColor} ${textAlign} font-bold`;
+  const headerClass = `${sizeClass} ${textColor === "white" ? "text-white" : "text-black"} ${textAlign} font-bold`;
 
   return <div className={headerClass}>{renderText()}</div>;
 };
 
 Header.propTypes = {
   text: PropTypes.string.isRequired,
-  highlightWords: PropTypes.arrayOf(PropTypes.string).isRequired,
   size: PropTypes.oneOf(["h1", "h2", "h3"]),
   textColor: PropTypes.oneOf(["white", "black"]),
   textAlign: PropTypes.oneOf(["text-left", "text-center", "text-right"]),
