@@ -6,7 +6,6 @@ const SocialLinksGroup = () => {
             <SocialLink width={12} height={12} iconText="instagram"/>
             <SocialLink width={12} height={12} iconText="twitter"/>
             <SocialLink width={12} height={12} iconText="facebook"/>
-            <SocialLink />
         </div>
     )
 }
