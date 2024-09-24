@@ -1,55 +1,49 @@
 import PropTypes from "prop-types";
 import Wavy from "./Component";
 
-const Header = ({ text, size, textColor, textAlign }) => {
-  const renderText = () => {
-    const words = text.split(" ");
-    return words.map((word, index) => {
-      const isLastWord = index === words.length - 1;
-      const wordLengthFactor = word.length * 35;
-
-      return (
-        <span
-          key={index}
-          className={`relative ${isLastWord ? "inline-block" : ""}`}
-        >
-          {word} {isLastWord && <Wavy wordLengthFactor={wordLengthFactor} />}
-        </span>
-      );
-    });
-  };
-
+const HeaderText = ({ text, size, textColor, textAlign }) => {
   let sizeClass;
+  let svgWidth;
+
   switch (size) {
     case "h1":
-      sizeClass = "text-6xl";
+      sizeClass = "max-[620px]:text-4xl text-6xl";
+      svgWidth = 200;
       break;
     case "h2":
       sizeClass = "text-3xl";
+      svgWidth = 140;
       break;
     case "h3":
       sizeClass = "text-2xl";
+      svgWidth = 130;
       break;
     default:
-      sizeClass = "text-3xl";
+      sizeClass = "text-xl";
+      svgWidth = 120;
   }
 
-  const headerClass = `${sizeClass} ${textColor === "white" ? "text-white" : "text-black"} ${textAlign} font-bold`;
+  const headerClass = `${sizeClass} ${textColor === "white" ? "text-white" : "text-black"} ${textAlign} font-bold relative flex flex-col`;
 
-  return <div className={headerClass}>{renderText()}</div>;
+  return (
+    <div className={headerClass}>
+      <span>{text}</span>
+      <Wavy svgWidth={svgWidth} textAlign={textAlign} />
+    </div>
+  );
 };
 
-Header.propTypes = {
+HeaderText.propTypes = {
   text: PropTypes.string.isRequired,
   size: PropTypes.oneOf(["h1", "h2", "h3"]),
   textColor: PropTypes.oneOf(["white", "black"]),
   textAlign: PropTypes.oneOf(["text-left", "text-center", "text-right"]),
 };
 
-Header.defaultProps = {
+HeaderText.defaultProps = {
   size: "h2",
   textColor: "black",
   textAlign: "text-center",
 };
 
-export default Header;
+export default HeaderText;

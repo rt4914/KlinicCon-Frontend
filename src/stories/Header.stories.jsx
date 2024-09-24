@@ -1,46 +1,62 @@
-import Header from "./Header";
+import HeaderText from "../components/Header/Header";
 
 export default {
   title: "Components/Header",
-  component: Header,
+  component: HeaderText,
+  tags: ["autodocs"],
+  argTypes: {
+    textColor: {
+      control: "select",
+      options: ["white", "black"],
+    },
+    size: {
+      control: "select",
+      options: ["h1", "h2", "h3"],
+    },
+    textAlign: {
+      control: "select",
+      options: ["text-left", "text-center", "text-right"],
+    },
+    text: {
+      control: "text",
+    },
+  },
 };
 
-// Story: Default Header (H2, Black, Center-aligned)
-export const DefaultHeader = () => (
-  <Header
-    text="Unlock Homy's advantages"
-    size="h2"
-    textColor="black"
-    textAlign="text-center"
-  />
-);
+// Default story: `Primary`
+export const Primary = {
+  args: {
+    text: "Hello, Storybook!",
+    size: "h1",
+    textColor: "black",
+    textAlign: "text-center",
+  },
+};
 
-// Story: H1 Header (White, Left-aligned)
-export const H1WhiteLeftAligned = () => (
-  <Header
-    text="Exclusive Monthly Deal for you."
-    size="h1"
-    textColor="black"
-    textAlign="text-left"
-  />
-);
+// Additional stories for different variations
+export const BlackText = {
+  args: {
+    text: "Black Text Example",
+    size: "h2",
+    textColor: "black",
+    textAlign: "text-left",
+  },
+};
 
-// Story: H3 Header (Black, Right-aligned, Multiple Highlighted Words)
-export const H3RightAlignedMultipleHighlights = () => (
-  <Header
-    text="Any Inquiry? Feel free to contact Us."
-    size="h3"
-    textColor="black"
-    textAlign="text-right"
-  />
-);
+export const LargeText = {
+  args: {
+    text: "Large HeaderText",
+    size: "h1",
+    textColor: "black",
+    textAlign: "text-right",
+  },
+};
 
-// Story: Custom Combination
-export const CustomHeader = () => (
-  <Header
-    text="Amazing Deals Await You!"
-    size="h2"
-    textColor="black"
-    textAlign="text-center"
-  />
-);
+export const SmallText = {
+  args: {
+    text: "Small HeaderText",
+    size: "h3",
+    textColor: "black",
+    textAlign: "text-center",
+  },
+};
