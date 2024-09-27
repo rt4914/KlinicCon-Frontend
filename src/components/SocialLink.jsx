@@ -7,8 +7,8 @@ const SocialLink = ({ icon, href, text }) => {
     <div>
       <Link to={href}>
         <div
-          className={`m-2 border border-neutral-900 rounded-full 
-          flex justify-center items-center hover:bg-neutral-900 hover:text-white w-12 h-12`}
+          className={`border border-black rounded-full 
+          flex justify-center items-center hover:bg-black hover:text-white w-12 h-12`}
         >
           <i className={`text-2xl ${icon}`}></i>
         </div>
@@ -18,9 +18,9 @@ const SocialLink = ({ icon, href, text }) => {
 };
 
 SocialLink.propTypes = {
-  icon: PropTypes.string,
-  href: PropTypes.string,
-  text: PropTypes.string,
+  icon: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };
 
 export default SocialLink;
