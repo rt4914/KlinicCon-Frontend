@@ -1,4 +1,4 @@
-import HeaderText from "../components/Header/Header";
+import HeaderText from "../components/HeaderText/HeaderText";
 
 export default {
   title: "Components/Header",

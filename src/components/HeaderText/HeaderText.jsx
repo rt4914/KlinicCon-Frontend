@@ -8,27 +8,29 @@ const HeaderText = ({ text, size, textColor, textAlign }) => {
   switch (size) {
     case "h1":
       sizeClass = "max-[620px]:text-4xl text-6xl";
-      svgWidth = 200;
+      svgWidth = 280;
       break;
     case "h2":
       sizeClass = "text-3xl";
-      svgWidth = 140;
+      svgWidth = 200;
       break;
     case "h3":
       sizeClass = "text-2xl";
-      svgWidth = 130;
+      svgWidth = 150;
       break;
     default:
       sizeClass = "text-xl";
       svgWidth = 120;
   }
 
-  const headerClass = `${sizeClass} ${textColor === "white" ? "text-white" : "text-black"} ${textAlign} font-bold relative flex flex-col`;
+  const headerClass = `${sizeClass} ${textColor === "white" ? "text-white" : "text-black"} ${textAlign} font-bold relative ${textAlign === "text-left" ? "inline-flex" : "flex"} flex-col`;
 
   return (
     <div className={headerClass}>
-      <span>{text}</span>
-      <Wavy svgWidth={svgWidth} textAlign={textAlign} />
+      <span>
+        <span className="leading-3">{text}</span>
+        <Wavy svgWidth={svgWidth} textAlign={textAlign} size={size} />
+      </span>
     </div>
   );
 };

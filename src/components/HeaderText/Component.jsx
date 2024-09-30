@@ -1,25 +1,28 @@
 import PropTypes from "prop-types";
+import classNames from "classnames";
 
-const Wavy = ({ svgWidth, textAlign }) => {
-  const marginClass =
-    textAlign === "text-center"
-      ? "mx-auto w-11"
-      : textAlign === "text-right"
-        ? "w-full"
-        : "mr-0 w-full";
-  const wavyRightClass =
-    textAlign === "text-right"
-      ? "right-8 !left-auto"
-      : textAlign === "text-left"
-        ? "!left-5"
-        : "";
+const Wavy = ({ svgWidth, textAlign, size }) => {
+  const svgClass = classNames("absolute h-[41px] max-[620px]:w-[120px] -z-10", {
+    "right-0 !bottom-[-22px]": size === "h1" && textAlign !== "text-center",
+    "right-0 !bottom-[-18px]": size === "h2" && textAlign !== "text-center",
+    "right-0 !bottom-[-21px]": size === "h3" && textAlign !== "text-center",
+
+    // For center alignment, adjust positioning
+    "left-1/2 transform -translate-x-1/2 !bottom-[-22px]":
+      size === "h1" && textAlign === "text-center",
+    "left-1/2 transform -translate-x-1/2 !bottom-[-18px]":
+      size === "h2" && textAlign === "text-center",
+    "left-1/2 transform -translate-x-1/2 !bottom-[-21px]":
+      size === "h3" && textAlign === "text-center",
+  });
+
   return (
-    <div className={`relative ${textAlign}  ${marginClass}`}>
+    <div>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 280 21"
         fill="none"
-        className={`absolute bottom-[-18px] left-[-43px] h-[21px] ${wavyRightClass} max-[620px]:w-[120px]`}
+        className={svgClass}
         width={svgWidth}
       >
         <path
@@ -35,7 +38,9 @@ const Wavy = ({ svgWidth, textAlign }) => {
 
 Wavy.propTypes = {
   svgWidth: PropTypes.number.isRequired,
-  textAlign: PropTypes.string.isRequired,
+  textAlign: PropTypes.oneOf(["text-left", "text-center", "text-right"])
+    .isRequired,
+  size: PropTypes.oneOf(["h1", "h2", "h3"]).isRequired,
 };
 
 export default Wavy;
