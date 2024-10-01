@@ -2,7 +2,16 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import classNames from "classnames";
 
-const Button = ({ text, variant, size, to, fullWidth, children, ...props }) => {
+const Button = ({
+  text,
+  variant,
+  size,
+  to,
+  fullWidth,
+  children,
+  onClick,
+  ...props
+}) => {
   const buttonClass = classNames(
     "inline-flex gap-2 items-center justify-center font-semibold transition-colors duration-300 rounded-lg",
     {
@@ -20,10 +29,8 @@ const Button = ({ text, variant, size, to, fullWidth, children, ...props }) => {
     }
   );
 
-  const ButtonComponent = to ? Link : "button";
-
-  return (
-    <ButtonComponent to={to} className={buttonClass} {...props}>
+  return to ? (
+    <Link to={to} className={buttonClass} {...props}>
       {children ? (
         <>
           <span>{text}</span>
@@ -32,7 +39,18 @@ const Button = ({ text, variant, size, to, fullWidth, children, ...props }) => {
       ) : (
         text
       )}
-    </ButtonComponent>
+    </Link>
+  ) : (
+    <button onClick={onClick} className={buttonClass} {...props}>
+      {children ? (
+        <>
+          <span>{text}</span>
+          {children}
+        </>
+      ) : (
+        text
+      )}
+    </button>
   );
 };
 
@@ -43,6 +61,7 @@ Button.propTypes = {
   to: PropTypes.string,
   fullWidth: PropTypes.bool,
   children: PropTypes.node,
+  onClick: PropTypes.func,
 };
 
 Button.defaultProps = {

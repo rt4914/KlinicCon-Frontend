@@ -39,6 +39,10 @@ Default.argTypes = {
   children: {
     table: { disable: true },
   },
+  variant: {
+    control: "select",
+    options: ["default", "black", "outline"],
+  },
 };
 
 // Black Button
@@ -51,6 +55,10 @@ Black.args = {
 Black.argTypes = {
   children: {
     table: { disable: true },
+  },
+  variant: {
+    control: "select",
+    options: ["default", "black", "outline"],
   },
 };
 // Outline Button
@@ -76,6 +84,10 @@ Outline.args = {
 Outline.argTypes = {
   children: {
     table: { disable: true },
+  },
+  variant: {
+    control: "select",
+    options: ["default", "black", "outline"],
   },
 };
 
