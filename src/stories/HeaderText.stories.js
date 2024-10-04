@@ -26,7 +26,8 @@ export default {
 // Default story: `Primary`
 export const Primary = {
   args: {
-    text: "Hello, Storybook!",
+    text: "My home is in family",
+    wavyText: "in family",
     size: "h1",
     textColor: "black",
     textAlign: "text-center",
@@ -37,6 +38,7 @@ export const Primary = {
 export const BlackText = {
   args: {
     text: "Black Text Example",
+    wavyText: "Example",
     size: "h2",
     textColor: "black",
     textAlign: "text-left",
@@ -45,7 +47,8 @@ export const BlackText = {
 
 export const LargeText = {
   args: {
-    text: "Large HeaderText",
+    text: "Large HeaderText header example",
+    wavyText: "HeaderText",
     size: "h1",
     textColor: "black",
     textAlign: "text-right",
@@ -54,7 +57,8 @@ export const LargeText = {
 
 export const SmallText = {
   args: {
-    text: "Small HeaderText",
+    text: "Small HeaderText header",
+    wavyText: "HeaderText header",
     size: "h3",
     textColor: "black",
     textAlign: "text-center",
