@@ -1,3 +1,5 @@
+const defaultColors = require('tailwindcss/colors');
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -8,9 +10,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        'orange': '#ff6725',
-        'orange-dark': '#ff3f25',
-        'orange-light': '#fef7f3',
+        ...defaultColors,
+        'orange':{
+          DEFAULT: '#ff6725',
+        'dark': '#ff3f25',
+        'light': '#fef7f3',
+        },
         'brown': '#453a34',
         'green': '#00b579',
       },
