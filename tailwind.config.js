@@ -6,7 +6,11 @@ export default {
     "./.storybook/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      textDecorationStyle: {
+        wavy: "wavy",
+      },
+    },
   },
   plugins: [],
 };
