@@ -1,4 +1,4 @@
-import HeaderText from "../components/HeaderText/HeaderText";
+import HeaderText from "../components/HeaderText";
 
 export default {
   title: "Components/Header",
@@ -13,10 +13,6 @@ export default {
       control: "select",
       options: ["h1", "h2", "h3"],
     },
-    textAlign: {
-      control: "select",
-      options: ["text-left", "text-center", "text-right"],
-    },
     text: {
       control: "text",
     },
@@ -30,7 +26,6 @@ export const Primary = {
     wavyText: "in family",
     size: "h1",
     textColor: "black",
-    textAlign: "text-center",
   },
 };
 
@@ -41,7 +36,6 @@ export const BlackText = {
     wavyText: "Example",
     size: "h2",
     textColor: "black",
-    textAlign: "text-left",
   },
 };
 
@@ -51,7 +45,6 @@ export const LargeText = {
     wavyText: "HeaderText",
     size: "h1",
     textColor: "black",
-    textAlign: "text-right",
   },
 };
 
@@ -61,6 +54,5 @@ export const SmallText = {
     wavyText: "HeaderText header",
     size: "h3",
     textColor: "black",
-    textAlign: "text-center",
   },
 };
