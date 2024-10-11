@@ -1,29 +1,39 @@
 import PropTypes from "prop-types";
 
-const HeaderText = ({ text, wavyText, size, textColor }) => {
-  let sizeClass;
+const getSizeClass = (size) => {
+  switch (size) {
+    case "h1":
+      return "max-[620px]:text-4xl text-6xl";
+    case "h2":
+      return "text-5xl";
+    case "h3":
+      return "text-4xl";
+    default:
+      return "text-3xl";
+  }
+};
+
+const getSvgClass = (size) => {
+  const baseClass = "absolute h-[41px] max-[620px]:w-[120px] -z-10";
 
   switch (size) {
     case "h1":
-      sizeClass = "max-[620px]:text-4xl text-6xl";
-      break;
+      return `${baseClass} !bottom-[-47px]`;
     case "h2":
-      sizeClass = "text-5xl";
-      break;
+      return `${baseClass} !bottom-[-39px]`;
     case "h3":
-      sizeClass = "text-4xl";
-      break;
+      return `${baseClass} !bottom-[-37px]`;
     default:
-      sizeClass = "text-3xl";
+      return baseClass;
   }
+};
 
-  const headerClass = `${sizeClass} ${
-    textColor === "white" ? "text-white" : "text-black"
-  }  font-bold relative flex-col`;
+const HeaderText = ({ text, wavyText, size, textColor }) => {
+  const sizeClass = getSizeClass(size);
+  const svgClass = getSvgClass(size);
 
-  const svgClass = `absolute h-[41px] max-[620px]:w-[120px] -z-10 ${
-    size === "h1" ? "!bottom-[-47px]" : ""
-  } ${size === "h2" ? "!bottom-[-39px]" : ""} ${size === "h3" ? "!bottom-[-37px]" : ""}`;
+  const textColorClass = textColor === "white" ? "text-white" : "text-black";
+  const headerClass = `${sizeClass} ${textColorClass} font-bold relative flex-col`;
 
   const splitText = text.split(wavyText);
 
