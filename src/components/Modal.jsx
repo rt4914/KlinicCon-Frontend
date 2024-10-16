@@ -1,7 +1,7 @@
 import AuthForm from "./AuthForm.jsx";
 import {useState} from "react";
-import clsx from "clsx";
 import PropTypes from 'prop-types';
+import classNames from "classnames";
 
 const Modal = ({ setIsModalOpen }) => {
   const [isSignUp, setIsSignUp] = useState(true);
@@ -10,11 +10,25 @@ const Modal = ({ setIsModalOpen }) => {
     setIsSignUp(true);
     setIsLogin(false);
   }
-
   const loginState = () => {
     setIsLogin(true);
     setIsSignUp(false);
   }
+  const loginClassNames = classNames(
+      "px-20 py-2 text-lg border-r-2 border-orange-400",
+      {
+        "text-black font-semibold bg-orange-50": isSignUp,
+        "text-orange-500 font-semibold": !isSignUp
+      }
+  )
+  const signUpClassNames = classNames(
+      "px-20 py-2 text-lg",
+      {
+        "text-orange-500 font-semibold": isSignUp,
+        "text-black font-semibold bg-orange-50": !isSignUp
+      }
+  )
+
 
   return (
       <>
@@ -27,12 +41,12 @@ const Modal = ({ setIsModalOpen }) => {
             </div>
             <div className={"flex border border-orange-400 rounded-full overflow-clip"}>
               <div>
-                <button className={clsx("px-20 py-2 text-lg border-r-2 border-orange-400", isSignUp ? "text-black font-semibold bg-orange-50" : "text-orange-500 font-semibold")}
+                <button className={loginClassNames}
                         onClick={loginState}>Login
                 </button>
               </div>
               <div>
-                <button className={clsx("px-20 py-2 text-lg", isSignUp ? "text-orange-500 font-semibold" : "text-black font-semibold bg-orange-50")}
+                <button className={signUpClassNames}
                         onClick={signUpState}>Signup
                 </button>
               </div>
