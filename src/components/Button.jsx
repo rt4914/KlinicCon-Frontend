@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import classNames from "classnames";
 
 const Button = ({
@@ -43,12 +43,12 @@ const Button = ({
   ) : (
     <button onClick={onClick} className={buttonClass} {...props}>
       {children ? (
-        <>
-          <span>{text}</span>
-          {children}
-        </>
+          <>
+            {children}
+            <span>{text}</span>
+          </>
       ) : (
-        text
+          text
       )}
     </button>
   );

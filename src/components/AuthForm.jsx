@@ -2,13 +2,8 @@ import {Input, Variant} from "./Input.jsx";
 import Button from "./Button.jsx";
 import PropTypes from "prop-types";
 
-const KlinicAuthForm = ({
-                          headerText,
-                          promptText,
-                          actionLink,
-                          actionLinkText,
-                          buttonText
-                        }) => {
+const AuthForm = ({ headerText, promptText, actionLink, actionLinkText, buttonText }) => {
+
   return (
       <div className={"flex flex-col items-center rounded-xl px-8 py-12"}>
         <div className={"flex flex-col items-center "}>
@@ -22,7 +17,7 @@ const KlinicAuthForm = ({
           </div>
         </div>
         <div className={"flex flex-col"}>
-          <form className={"w-[400px]"}
+          <form className={"w-[500px]"}
                 onSubmit={(e) => {
                   e.preventDefault();
                 }}>
@@ -53,7 +48,7 @@ const KlinicAuthForm = ({
   )
 }
 
-KlinicAuthForm.propTypes = {
+AuthForm.propTypes = {
   headerText: PropTypes.string,
   promptText: PropTypes.string,
   actionLink: PropTypes.string,
@@ -61,4 +56,4 @@ KlinicAuthForm.propTypes = {
   buttonText: PropTypes.string.isRequired,
 }
 
-export default KlinicAuthForm;
+export default AuthForm;
