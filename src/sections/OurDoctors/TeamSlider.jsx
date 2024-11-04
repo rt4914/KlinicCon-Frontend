@@ -6,32 +6,39 @@ import image2 from "../../assets/img_02.webp";
 import image3 from "../../assets/img_03.webp";
 import image4 from "../../assets/img_04.webp";
 import image5 from "../../assets/img_05.webp";
+import PropTypes from "prop-types";
+import StarRating from "./StarRating";
 
 const teamMembers = [
   {
     name: "Jubayer Al Hasan",
     role: "Marketing Expert",
     imageUrl: image1,
+    rating: 4,
   },
   {
     name: "Jannatul Ferdaus",
     role: "Broker",
     imageUrl: image2,
+    rating: 5,
   },
   {
     name: "Chris Matial",
     role: "Broker",
     imageUrl: image3,
+    rating: 3,
   },
   {
     name: "Mark Filo",
     role: "CEO & Founder",
     imageUrl: image4,
+    rating: 5,
   },
   {
     name: "Professor Dr D. Filo",
     role: "CEO & Founder",
     imageUrl: image5,
+    rating: 4,
   },
 ];
 
@@ -80,11 +87,22 @@ const TeamSlider = () => {
 
             <h3 className="mt-4 text-2xl font-semibold py-2">{member.name}</h3>
             <p className="text-lg text-gray-500">{member.role}</p>
+            <StarRating rating={member.rating} />
           </div>
         </div>
       ))}
     </Slider>
   );
+};
+TeamSlider.propTypes = {
+  teamMembers: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      role: PropTypes.string.isRequired,
+      imageUrl: PropTypes.string.isRequired,
+      rating: PropTypes.number.isRequired,
+    })
+  ),
 };
 
 export default TeamSlider;
