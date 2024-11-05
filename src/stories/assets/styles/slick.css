@@ -1,0 +1,21 @@
+.with-background::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  right: -40px;
+  top: -35px;
+  height: 45%;
+  z-index: -1;
+  background: url("../../../assets/shape.svg") no-repeat 50%;
+  background-size: cover;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: #f97316 !important;
+  font-size: 14px !important;
+}
+.slick-dots li button:before {
+  opacity: 1 !important;
+  color: #000 !important;
+  font-size: 14px !important;
+}

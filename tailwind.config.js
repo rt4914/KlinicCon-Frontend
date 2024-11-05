@@ -2,11 +2,7 @@ const defaultColors = require("tailwindcss/colors");
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-    "./.storybook/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}", "./.storybook/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
@@ -21,5 +17,15 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".slick-dot-active": {
+          opacity: "1 !important",
+          color: "#f97316 !important",
+          fontSize: "14px !important",
+        },
+      });
+    },
+  ],
 };
