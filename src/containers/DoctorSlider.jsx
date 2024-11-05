@@ -1,55 +1,17 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import image1 from "../../assets/img_01.webp";
-import image2 from "../../assets/img_02.webp";
-import image3 from "../../assets/img_03.webp";
-import image4 from "../../assets/img_04.webp";
-import image5 from "../../assets/img_05.webp";
 import PropTypes from "prop-types";
-import StarRating from "./StarRating";
+import StarRating from "../components/StarRating";
 
-const teamMembers = [
-  {
-    name: "Jubayer Al Hasan",
-    role: "Marketing Expert",
-    imageUrl: image1,
-    rating: 4,
-  },
-  {
-    name: "Jannatul Ferdaus",
-    role: "Broker",
-    imageUrl: image2,
-    rating: 5,
-  },
-  {
-    name: "Chris Matial",
-    role: "Broker",
-    imageUrl: image3,
-    rating: 3,
-  },
-  {
-    name: "Mark Filo",
-    role: "CEO & Founder",
-    imageUrl: image4,
-    rating: 5,
-  },
-  {
-    name: "Professor Dr D. Filo",
-    role: "CEO & Founder",
-    imageUrl: image5,
-    rating: 4,
-  },
-];
-
-const TeamSlider = () => {
+const DoctorSlider = ({ teamMembers = [] }) => {
   const settings = {
     dots: true,
     infinite: true,
     autoplay: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 3,
+    slidesToScroll: 2,
     responsive: [
       {
         breakpoint: 1024,
@@ -67,6 +29,7 @@ const TeamSlider = () => {
         breakpoint: 640,
         settings: {
           slidesToShow: 1,
+          slidesToScroll: 1,
         },
       },
     ],
@@ -94,7 +57,8 @@ const TeamSlider = () => {
     </Slider>
   );
 };
-TeamSlider.propTypes = {
+
+DoctorSlider.propTypes = {
   teamMembers: PropTypes.arrayOf(
     PropTypes.shape({
       name: PropTypes.string.isRequired,
@@ -105,4 +69,4 @@ TeamSlider.propTypes = {
   ),
 };
 
-export default TeamSlider;
+export default DoctorSlider;
